@@ -6,13 +6,18 @@
     font-family: 'Arial', sans-serif;
 }
 
-header {
-    background: #e1f9bf;
-    color: #ca6484;
+.header {
+    background: #e9ddb1;
+    color: #8d5063;
     padding: 1rem;
     position: fixed;
     width: 100%;
     z-index: 1000;
+}
+.header-inner {
+  display:flex;
+  align-items:center;
+  width: 100%;
 }
 
 /* Estilos para el contenedor del logo y el título */
@@ -33,13 +38,16 @@ header {
   }
   
   /* BOTONES DE INICIO Y BARRA DE NAVEGACIÓN */
-.nav ul {
+.main-nav{
+  margin-left: auto;
+}
+.main-nav ul{
    display: flex;
  list-style: none;
 }
 
-  .nav ul li a {
-  color:#e1f9bf;
+  .main-nav ul li a {
+  color:  #795e54;
   text-decoration: none;
   margin-left: 2rem;
   display: flex;
@@ -47,8 +55,8 @@ header {
   gap: 15px; /*Espacio entre las secciones del menú nav */
   }
   
-    .nav-button {
-    background-color: #48bb28c2;
+    .btn-dona {
+    background-color: #8e89cbc2;
     color: #333333;
   padding: 10px 20px;
   margin-left: 15px;
@@ -60,7 +68,43 @@ header {
   }
   
     .nav-button:hover {
-    background-color: #7F966F;
+    background-color: #a0ece7;
   transform: scale(1.05);
   }
+  .footer{
+    display: flex;
+  width: 100%;  
+  }
+
+  .footer-social {
+    background-color: #E8A0BF;
+    padding: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #333333;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
 
